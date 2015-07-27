@@ -1,4 +1,4 @@
-# MKM_website_2015
+# Portfolio / Personal Website
 Webpage redesign for myself
 
 To remember:
@@ -6,7 +6,9 @@ To remember:
 - cd into the stylesheets folder
 - $sass --watch wenevergo.scss:outofstyle.css
 
-To Do:
+*To Do:*
+
+*Phsae 1:*
 - replace columns classes with @include
 - typography
 - color palette
@@ -19,5 +21,7 @@ To Do:
 - replace lorem ipsum with real copy
 - launch!
 
-
+*Phase 2:*
+- add animations
+- optimize/refactor
 
