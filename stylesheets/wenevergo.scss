@@ -1,0 +1,90 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "normalize.css";
+@import "columns";
+
+/* variables */
+
+$body-line-height: 1.5em;
+
+
+/* Defines styles, top down */
+body {
+	position: relative;
+	top: $body-line-height*3;
+}
+
+body p {
+	line-height: $body-line-height;
+}
+
+nav {
+	width: 100%;
+	height: $body-line-height*3;
+	position: fixed;
+	background-color: #000000;
+
+
+	ul {
+		margin: 0;
+		margin-top:$body-line-height*1;
+		margin-bottom: $body-line-height*2;
+		line-height: normal;
+
+		li { 
+			display: inline;
+			/*margin-top:$body-line-height;
+			margin-bottom: $body-line-height;
+			line-height: normal;*/
+
+			a {
+				padding: $body-line-height*1.5;
+				text-decoration: none;
+				color: #ffffff;
+				margin: 0;
+			}
+
+			a:hover {
+				background-color: #d3d3d3;
+				color: #000000;
+			}
+		}
+	}
+}
+
+.spacer {
+	height: $body-line-height*2;
+}
+
+header {
+	text-align: center;
+	background-color: #d3d3d3;
+	padding: 2em;
+}
+
+div.section {
+	padding: 2em;
+	width: 100%;
+
+	div {
+    line-height: $body-line-height;
+    text-align: left;
+  }
+	
+}
+
+#bio{
+	background-color: #bdbdbd;
+}
+
+#projects{
+	background-color: #a8a8a8;
+}
+
+#history{
+	background-color: #939393;
+}
+
+#contact{
+	background-color: #7e7e7e;
+}

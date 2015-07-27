@@ -1,0 +1,208 @@
+@import url(normalize.css);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Defines column classes a la bootstrap */
+.outer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  .outer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.col-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .col-1:last-child {
+    margin-right: 0; }
+
+.col-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .col-2:last-child {
+    margin-right: 0; }
+
+.col-3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .col-3:last-child {
+    margin-right: 0; }
+
+.col-4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .col-4:last-child {
+    margin-right: 0; }
+
+.col-5 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .col-5:last-child {
+    margin-right: 0; }
+
+.col-6 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .col-6:last-child {
+    margin-right: 0; }
+
+.col-7 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .col-7:last-child {
+    margin-right: 0; }
+
+.col-8 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .col-8:last-child {
+    margin-right: 0; }
+
+.col-9 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .col-9:last-child {
+    margin-right: 0; }
+
+.col-10 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .col-10:last-child {
+    margin-right: 0; }
+
+.col-11 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .col-11:last-child {
+    margin-right: 0; }
+
+.col-12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .col-12:last-child {
+    margin-right: 0; }
+
+.shift-1 {
+  margin-left: 8.5298%; }
+
+.shift-2 {
+  margin-left: 17.05961%; }
+
+.shift-3 {
+  margin-left: 25.58941%; }
+
+.shift-4 {
+  margin-left: 34.11922%; }
+
+.shift-5 {
+  margin-left: 42.64902%; }
+
+.shift-6 {
+  margin-left: 51.17883%; }
+
+.shift-7 {
+  margin-left: 59.70863%; }
+
+.shift-8 {
+  margin-left: 68.23843%; }
+
+.shift-9 {
+  margin-left: 76.76824%; }
+
+.shift-10 {
+  margin-left: 85.29804%; }
+
+.shift-11 {
+  margin-left: 93.82785%; }
+
+/* variables */
+/* Defines styles, top down */
+body {
+  position: relative;
+  top: 4.5em; }
+
+body p {
+  line-height: 1.5em; }
+
+nav {
+  width: 100%;
+  height: 4.5em;
+  position: fixed;
+  background-color: #000000; }
+  nav ul {
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    line-height: normal; }
+    nav ul li {
+      display: inline;
+      /*margin-top:$body-line-height;
+      margin-bottom: $body-line-height;
+      line-height: normal;*/ }
+      nav ul li a {
+        padding: 2.25em;
+        text-decoration: none;
+        color: #ffffff;
+        margin: 0; }
+      nav ul li a:hover {
+        background-color: #d3d3d3;
+        color: #000000; }
+
+.spacer {
+  height: 3em; }
+
+header {
+  text-align: center;
+  background-color: #d3d3d3;
+  padding: 2em; }
+
+div.section {
+  padding: 2em;
+  width: 100%; }
+  div.section div {
+    line-height: 1.5em;
+    text-align: left; }
+
+#bio {
+  background-color: #bdbdbd; }
+
+#projects {
+  background-color: #a8a8a8; }
+
+#history {
+  background-color: #939393; }
+
+#contact {
+  background-color: #7e7e7e; }
+
+/*# sourceMappingURL=outofstyle.css.map */
