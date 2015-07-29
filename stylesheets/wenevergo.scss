@@ -8,7 +8,7 @@
 $body-line-height: 1.5em;
 
 
-/* Defines styles, top down */
+/* Defines styles, top down */ 
 body {
 	position: relative;
 	top: $body-line-height*3;
@@ -22,8 +22,17 @@ nav {
 	width: 100%;
 	height: $body-line-height*3;
 	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: #000000;
 
+	ul#page {
+		float: left;
+	}
+
+	ul#social {
+		float: right;
+	}
 
 	ul {
 		margin: 0;
@@ -32,7 +41,7 @@ nav {
 		line-height: normal;
 
 		li { 
-			display: inline;
+			display: inline-block;
 			/*margin-top:$body-line-height;
 			margin-bottom: $body-line-height;
 			line-height: normal;*/

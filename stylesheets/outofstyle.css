@@ -158,14 +158,20 @@ nav {
   width: 100%;
   height: 4.5em;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #000000; }
+  nav ul#page {
+    float: left; }
+  nav ul#social {
+    float: right; }
   nav ul {
     margin: 0;
     margin-top: 1.5em;
     margin-bottom: 3em;
     line-height: normal; }
     nav ul li {
-      display: inline;
+      display: inline-block;
       /*margin-top:$body-line-height;
       margin-bottom: $body-line-height;
       line-height: normal;*/ }
