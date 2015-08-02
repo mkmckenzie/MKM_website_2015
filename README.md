@@ -8,7 +8,7 @@ To remember:
 
 *To Do:*
 
-*Phsae 1:*
+*Phase 1:*
 - replace columns classes with @include
 - typography
 - color palette
@@ -18,7 +18,7 @@ To remember:
 - add social links
 - add shape details
 - add footer
-- replace lorem ipsum with real copy
+- ~~replace lorem ipsum with real copy~~
 - launch!
 
 *Phase 2:*
