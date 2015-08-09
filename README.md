@@ -10,10 +10,10 @@ To remember:
 
 *Phase 1:*
 - replace columns classes with @include
-- typography
+- ~~typography~~
 - color palette
 - media queries 
-- find a lightweight jquery slider to use for portfolio
+- ~~find a lightweight jquery slider to use for portfolio~~
 - add email form
 - add social links
 - add shape details
