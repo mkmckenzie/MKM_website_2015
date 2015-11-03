@@ -157,7 +157,8 @@ h1 {
   font-weight: 400;
   font-size: 80px;
   letter-spacing: 20px;
-  text-align: center; }
+  text-align: center;
+  color: #ffffff; }
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -214,8 +215,19 @@ nav {
 
 header {
   text-align: center;
-  background-color: #d3d3d3;
+  /*background-color: #d3d3d3;*/
   padding: 100px; }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  background: url(assets/pix/closednotebook_videostill.png) no-repeat;
+  background-size: cover;
+  z-index: -10; }
 
 div.section {
   padding: 100px;
