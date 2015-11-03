@@ -25,6 +25,7 @@ h1 {
 	font-size: 80px;
 	letter-spacing: 20px;
 	text-align: center;
+	color: $white;
 }
 
 h2 {
@@ -100,8 +101,21 @@ nav {
 
 header {
 	text-align: center;
-	background-color: #d3d3d3;
+	/*background-color: #d3d3d3;*/
 	padding: $navbar-height*2;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width:100%;
+	width: auto;
+	height: auto;
+	background: url(assets/pix/closednotebook_videostill.png) no-repeat;
+	background-size: cover;
+	z-index: -10;
+
 }
 
 div.section {
