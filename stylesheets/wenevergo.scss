@@ -17,6 +17,7 @@ $background-grey: #bdbdbd;
 body {
 	position: relative;
 	top: $navbar-height;
+	background-color: $background-grey;
 }
 
 h1 {
@@ -102,7 +103,7 @@ nav {
 header {
 	text-align: center;
 	/*background-color: #d3d3d3;*/
-	padding: $navbar-height*2;
+	padding: $navbar-height*4;
 }
 
 video {
@@ -113,7 +114,6 @@ video {
 	width: auto;
 	height: auto;
 	background: url(assets/pix/closednotebook_videostill.png) no-repeat;
-	background-size: cover;
 	z-index: -10;
 
 }
@@ -138,7 +138,7 @@ div.section {
 /* Hexagons */
 .hexagon {
   position: absolute;
-  top: -20px;
+  top: -100px;
   left: 80px;
   width: 200px; 
   height: 115.47px;

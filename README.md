@@ -31,3 +31,4 @@ To remember:
 *Where I Left Off:*
 - *11/2/2015*: Added video header to ramennoodle branch, need to convert mp4 to ogv and webm formats. Figure out why it's not quite full screen (is it just my laptop again??). Also re-align bio div underneath video. Would like to add b&w/sepia/otherwise monochromatic filter on video - can do in pure CSS or external editing required? To optimize: compress video!
 
+-*11/3/2015*: Converted video and now it works because i didn't spell the file name wrong. yay. still looking to add "filter"
