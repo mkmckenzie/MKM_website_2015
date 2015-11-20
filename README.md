@@ -42,3 +42,10 @@ To remember:
 --Add link to printable resume 
 
 - *11/17/2015*: Added "skills" section. Made some style changes ~but it seems they weren't quite writing to the css file correctly~ to the correct css file. 
+
+- *11/20/2015*: Made lots of changes to the video, but it essentially looks the same. Added a greyscale filter, decided not to do the gradient. changed background to white. Made headers bold. Still figuring out zoom to caption on carousel. Added jQuery show on click, but now I can't get it to hide. Not sure how to re-render the script after the new featherlight (lightbox) divs are generated, which is causing problems in how I expect to click to hide. Probably going about this in a really roundabout way.
+	_Left to do_:
+	- figure out how to hide .carouselDetails after clicking to close box
+	- OR just find a better carousel that has that functionality built in. May need to hunt around more, look at slick slider again.
+	- Figure out how to incorporate skillshare classes, here's a link to completed classes: https://www.skillshare.com/mkmckenzie/completed
+	- make responsive cause it looks like straight nonsense on a small screen right now. ref for media queries in sass: http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32

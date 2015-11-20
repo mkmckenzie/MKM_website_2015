@@ -4,6 +4,8 @@
 @import "normalize.css";
 @import "columns";
 
+
+
 /* variables */
 $body-line-height: 21px;
 $source-sans: 'Source Sans Pro', sans-serif;
@@ -11,40 +13,42 @@ $raleway: 'Raleway', sans-serif;
 $navbar-height: 50px;
 $white: #ffffff;
 $that-blue: #579fc6;
-$background-grey: #ffffff;
+$background-color: #ffffff;
+$navbar-color: #dadada;
 
 /* Defines styles, top down */ 
 body {
 	position: relative;
 	top: $navbar-height;
-	background-color: $background-grey;
+	background-color: $background-color;
 }
 
 h1 {
 	font-family: $raleway;
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 80px;
 	letter-spacing: 20px;
 	text-align: center;
-	color: $white;
+	//color: darken($navbar-color, 30%);
+	color: $that-blue;
 }
 
 h2 {
 	font-family: $raleway;
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 30px;
 	line-height: $body-line-height*2;
 }
 
 h3 {
 	font-family: $raleway;
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: $body-line-height*1.5;
 
 }
 
-body p {
+body p, li {
 	font-family: $source-sans;
 	line-height: $body-line-height;
 	font-size: 14px;
@@ -57,7 +61,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #dadada;
+	background-color: $navbar-color;
 	z-index: 30;
 
 	ul#page {
@@ -111,9 +115,8 @@ div#videoOverlay {
 	top: 0;
 	left: 0;
 	width:100%;
-	height: 100%;
+	min-height: 760px;
 	z-index: -5;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 video {
@@ -122,9 +125,11 @@ video {
 	left: 0;
 	width:100%;
 	height: auto;
-	background: url(assets/pix/closednotebook_videostill.png) no-repeat;
+	background: url(../assets/pix/closednotebook_videostill.png) no-repeat;
 	z-index: -10;
-
+	opacity: 0.35;
+	@include filter(grayscale(100%));
+    filter: alpha(opacity=35);
 }
 
 div.section {
@@ -142,6 +147,15 @@ div.section {
 	background-color: #ffffff;
 }
 
+div#techSkillsContainer, div#softSkillsContainer {
+	float: left;
+	width: 48%;
+
+}
+
+div.carouselDetails {
+	display: none;
+}
 
 
 /* Hexagons */

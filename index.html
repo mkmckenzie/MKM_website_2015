@@ -22,6 +22,11 @@
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
   <![endif]-->
 </head>
 
@@ -48,7 +53,7 @@
       <source src="assets/video/doodle_timelapse.webm" type="video/webm" />
       <source src="assets/video/doodle_timelapse.mp4" type="video/mp4" />
   </video>      
-<div id="videoOverlay"></div>
+<div class="gradient" id="videoOverlay"></div>
 <!-- Jus my name -->
   <header>
     <div class="outer-container">
@@ -87,9 +92,11 @@
      <div class="col-12">
 <!-- jquery carousel -->
           <div class="owl-carousel">
-          <div><a href="#" data-featherlight="assets/pix/greenstream.png"><img src="assets/pix/greenstream.png" /></a></div>
-          <div><a href="#" data-featherlight="assets/pix/wintersbros.png"><img src="assets/pix/wintersbros.png" /></a></div>
-          <div><img src="assets/pix/wintersbros.png" />STUFF</div>
+          <div class="carouselBox"><a href="#" data-featherlight="assets/pix/greenstream.png"><img src="assets/pix/greenstream.png" /></a></div>
+          <div class="carouselBox"><a href="#" data-featherlight="#winterbros"><img src="assets/pix/wintersbros.png" /></a>
+            <div class="carouselDetails" id="winterbros"><img src="assets/pix/wintersbros.png" /><p>here's some stuff</p></div>
+            </div>
+          <div class="carouselBox"><img src="assets/pix/wintersbros.png" /><p>STUFF</p></div>
         </div>
 <!-- end jquery carousel -->
     </div>
@@ -123,6 +130,7 @@
       <div class="col-8 shift-2">
         <h2>skills</h2>
         <p>Find yourself thinking, "Well, great but what are you <em>good</em> at?"  I've got all your answers right here.</p>
+        <div id="techSkillsContainer">
         <h3 id="techSkillsHeader">Technical Skills</h3>
         <ul id="techSkills">
           <li>HTML</li>
@@ -146,6 +154,8 @@
             </ul>
           </li>
         </ul>
+      </div>
+      <div id="softSkillsContainer">
         <h3 id="softSkillsHeader">Soft Skills</h3>
         <ul id="softSkills">
           <li>Graphic Design
@@ -160,6 +170,7 @@
           <li>~passionate~</li>
           <li>generally a likeable person, does that count as skill</li>
         </ul>
+      </div>
       </div>
     </div>
   </div>
@@ -191,6 +202,24 @@
       trigger: 'hover'
     });
   });
+
+  $(".carouselBox").click(function () {
+    $(".carouselDetails").show();
+
+  });
+
+   $(".featherlight").click(function () {
+    console.log("got it");
+    $(".carouselDetails").hide();
+
+  });
+
+    $(".featherlight-close-icon").click(function () {
+    $(".carouselDetails").hide();
+
+  });
+
+
   </script>
   </footer>
 
