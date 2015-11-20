@@ -40,3 +40,5 @@ To remember:
 --Color should be addressed: find a different grey dammit. Maybe background should stay white and some highlights in grey (contact? to give balance to the page?).  
 --Need to add caption/more info to zoom in of portfolio projects
 --Add link to printable resume 
+
+- *11/17/2015*: Added "skills" section. Made some style changes ~but it seems they weren't quite writing to the css file correctly~ to the correct css file. 

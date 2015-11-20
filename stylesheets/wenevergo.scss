@@ -11,7 +11,7 @@ $raleway: 'Raleway', sans-serif;
 $navbar-height: 50px;
 $white: #ffffff;
 $that-blue: #579fc6;
-$background-grey: #bdbdbd;
+$background-grey: #ffffff;
 
 /* Defines styles, top down */ 
 body {
@@ -57,7 +57,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #000000;
+	background-color: #dadada;
 	z-index: 30;
 
 	ul#page {
@@ -138,8 +138,8 @@ div.section {
 	
 }
 
-#bio, #projects, #history, #contact {
-	background-color: $background-grey;
+#bio, #projects, #skills, #history, #contact {
+	background-color: #ffffff;
 }
 
 
