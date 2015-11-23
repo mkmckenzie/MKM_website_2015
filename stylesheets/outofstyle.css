@@ -217,7 +217,7 @@ nav {
 header {
   text-align: center;
   /*background-color: #d3d3d3;*/
-  padding: 200px; }
+  padding: 150px; }
 
 div#videoOverlay {
   position: absolute;
@@ -256,6 +256,25 @@ div#techSkillsContainer, div#softSkillsContainer {
 
 div.carouselDetails {
   display: none; }
+
+div#galleryLinks {
+  display: inline-block;
+  margin: 0 auto; }
+  div#galleryLinks div {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin: 10px;
+    overflow: hidden;
+    border: 10px solid #c4c4c4; }
+    div#galleryLinks div:hover {
+      border: 10px solid black; }
+    div#galleryLinks div img {
+      position: relative;
+      left: auto/2;
+      height: 130px;
+      width: auto;
+      margin: 0 auto; }
 
 /* Hexagons */
 .hexagon {

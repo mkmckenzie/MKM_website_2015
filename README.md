@@ -49,3 +49,11 @@ To remember:
 	- OR just find a better carousel that has that functionality built in. May need to hunt around more, look at slick slider again.
 	- Figure out how to incorporate skillshare classes, here's a link to completed classes: https://www.skillshare.com/mkmckenzie/completed
 	- make responsive cause it looks like straight nonsense on a small screen right now. ref for media queries in sass: http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+
+- *11/22/2015*: New branch: slider. Replaced the owl carousel + featherlight with Tos R Us gallery, kind of liked that look better AND i liked how it opened up. Might could go back and make it slide since TosRUs has the ability to do that, but it's late and i need sleep. Still left to do:
+	- Incorporate skillshare classes (see above for link)
+	- Ya still need to do responsive stuff...
+	- Also watch more screencasts? they're super helpful and why have you been limiting yourself to articles? honestly? here's a good one for grids with sass that would save you oodles of time at work: https://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/ 
+	- changed the padding on the header element so my name would move up and be on two lines, although three would definitely be nice for responsive.
+	- abstract out like elements into mixins and partials for easier locating. 
+	- generally getting stuff done, tho :)
