@@ -57,3 +57,5 @@ To remember:
 	- changed the padding on the header element so my name would move up and be on two lines, although three would definitely be nice for responsive.
 	- abstract out like elements into mixins and partials for easier locating. 
 	- generally getting stuff done, tho :)
+
+- *11/25/2015*: New branch: gallery. This portfolio layout is throwing me for a loop. Not sure if I like how any of it looks. Switched from looking at a slider to looking at a gallery, right now one is set to flip. But no lightbox involved. Could use TOS for that I guess, or hammerjs if you can figure out how to use that. But, art is assembled. Just need to figure out what a good standard size is and I'll photoshop batch edit those suckers.

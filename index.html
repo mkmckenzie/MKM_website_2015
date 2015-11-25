@@ -93,32 +93,33 @@
    </div>
    <div class="outer-container">
      <div class="col-12">
-<!-- begin owl carousel jquery carousel 
-          <div class="owl-carousel">
-          <div class="carouselBox"><a href="#" data-featherlight="assets/pix/greenstream.png"><img src="assets/pix/greenstream.png" /></a></div>
-          <div class="carouselBox"><a href="#" data-featherlight="#winterbros"><img src="assets/pix/wintersbros.png" /></a>
-            <div class="carouselDetails" id="winterbros"><img src="assets/pix/wintersbros.png" /><p>here's some stuff</p></div>
-            </div>
-          <div class="carouselBox"><img src="assets/pix/wintersbros.png" /><p>STUFF</p></div>
-        </div>
- end owl carousel jquery carousel -->
 
-    <div id="galleryLinks">
-      <a href="assets/pix/greenstream.png" title="A quick freelance project. New business, needed a place on the internet.">
-          <div class="imgThumb">
+    <div id="gallery">
+      <div class="imgThumb">
+        <a href="assets/pix/greenstream.png" title="A quick freelance project. New business, needed a place on the internet.">
+          <div class="front">
             <img src="assets/pix/greenstream.png" />
           </div>
-        </a>
-      <a href="assets/pix/wintersbros.png" title="Winters Bros.">
-        <div class="imgThumb">
+          <div class="back">
+            <p>A quick freelance project. New business, needed a place on the internet.</p>
+          </div>
+          </a>
+         
+
+        </div>
+      <div class="imgThumb">
+        <a href="assets/pix/wintersbros.png" title="Winters Bros.">
           <img src="assets/pix/greenstream.png" />
         </a>
       </div>
-      <a href="assets/pix/wintersbros.png" title="Winters Bros. part 2">
-        <div class="imgThumb">
+      
+      <div class="imgThumb">
+        <a href="assets/pix/wintersbros.png" title="Winters Bros.">
           <img src="assets/pix/greenstream.png" />
-        </div>
-      </a>
+        </a>
+      </div>
+      
+
     </div>
   </div>
 </div>
@@ -221,7 +222,7 @@
   <script type="text/javascript">
   $(document).ready(function () {
     console.log("ready!");
-     $("#bioCard").flip({
+     $("#bioCard, div.imgThumb").flip({
       axis: 'y',
       trigger: 'hover'
     });
@@ -243,19 +244,6 @@
 
   });
 
-   $(document).ready(function() {
-
-      $("div#galleryLinks > a").tosrus({ 
-        effect     : "fade",
-        buttons    : "inline",
-       pagination : {
-         add        : true
-   },
-       wrapper    : {
-      classes    : "img-border"
-   }
-    });
-   });
 
 
 

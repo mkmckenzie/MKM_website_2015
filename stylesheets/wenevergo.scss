@@ -156,7 +156,7 @@ div.carouselDetails {
 	display: none;
 }
 
-div#galleryLinks {
+div#gallery {
 	display: inline-block;
 	margin: 0 auto;
 
@@ -166,17 +166,17 @@ div#galleryLinks {
 	width: 130px;
 	margin: 10px;
 	overflow: hidden;
-	border: 10px solid #c4c4c4;
-	&:hover {
-		border: 10px solid black;
-	}
 
 		img {
 		position: relative;
-		left: (auto/2);
+		left: -60px;
 		height: 130px;
 		width: auto;
 		margin: 0 auto;
+		}
+
+		.back {
+			background-color: $background-color;
 		}
 	}
 }
