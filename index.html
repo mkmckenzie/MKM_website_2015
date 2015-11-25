@@ -244,8 +244,9 @@
   });
 
    $(document).ready(function() {
-
+console.log("here i am");
       $("div#galleryLinks > a").tosrus({ 
+
         effect     : "fade",
         buttons    : "inline",
        pagination : {
@@ -253,8 +254,13 @@
    },
        wrapper    : {
       classes    : "img-border"
-   }
+   },
+      caption : {
+        add : true,
+        
+      }
     });
+
    });
 
 

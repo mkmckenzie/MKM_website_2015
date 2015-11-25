@@ -266,12 +266,13 @@ div#galleryLinks {
     width: 130px;
     margin: 10px;
     overflow: hidden;
-    border: 10px solid #c4c4c4; }
+    border: 10px solid #c4c4c4;
+    text-align: center; }
     div#galleryLinks div:hover {
       border: 10px solid black; }
     div#galleryLinks div img {
       position: relative;
-      left: auto/2;
+      left: -60px;
       height: 130px;
       width: auto;
       margin: 0 auto; }
