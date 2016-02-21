@@ -14,7 +14,8 @@ $navbar-height: 50px;
 $white: #ffffff;
 $that-blue: #579fc6;
 $background-color: #ffffff;
-$navbar-color: #dadada;
+$black: #000000;
+$section-color: #dadada;
 
 /* Defines styles, top down */ 
 body {
@@ -61,7 +62,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $navbar-color;
+	background-color: $black;
 	z-index: 30;
 
 	ul#page {
@@ -132,18 +133,22 @@ video {
 }
 
 div.section {
-	padding: $navbar-height*2;
+	padding: $navbar-height;
 	width: 100%;
 
 	div {
-    line-height: $body-line-height;
+    line-height: $body-line-height*1.5;
     text-align: left;
   }
 	
 }
 
-#bio, #projects, #skills, #history, #contact {
+#bio, #history, #contact {
 	background-color: #ffffff;
+}
+
+#projects, #skills {
+  background-color: $section-color;
 }
 
 div#techSkillsContainer, div#softSkillsContainer {
@@ -152,27 +157,23 @@ div#techSkillsContainer, div#softSkillsContainer {
 
 }
 
-div.carouselDetails {
-	display: none;
-}
-
-div#gallery {
-	display: inline-block;
-	margin: 0 auto;
+div#portfolio {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 
 	div {
-	display: inline-block;
-	height: 130px;
-	width: 130px;
-	margin: 10px;
-	overflow: hidden;
+	height: auto;
+	width: 350px;
+  height: 400px;
+  overflow: hidden;
+  padding: 30px;
 
 		img {
-		position: relative;
-		left: -60px;
-		height: 130px;
-		width: auto;
-		margin: 0 auto;
+    height: 100%;
+
 		}
 
 		.back {
