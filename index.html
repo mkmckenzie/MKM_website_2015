@@ -15,11 +15,8 @@
 
   <link href="stylesheets/outofstyle.css" type="text/css" rel="stylesheet"/>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,800|Source+Sans+Pro' type='text/css' rel='stylesheet' />
-  <link  href="stylesheets/owlcarousel/owl.carousel.css" type="text/css" rel="stylesheet" />
   <link href="stylesheets/featherlight/featherlight.min.css"  rel="stylesheet"  />
   
-
-
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <style type="text/css">
@@ -28,6 +25,8 @@
     }
   </style>
   <![endif]-->
+
+
 </head>
 
 <body>
@@ -90,17 +89,42 @@
    </div>
    <div class="outer-container">
      <div class="col-12">
-<!-- jquery carousel -->
-          <div class="owl-carousel">
-          <div class="carouselBox"><a href="#" data-featherlight="assets/pix/greenstream.png"><img src="assets/pix/greenstream.png" /></a></div>
-          <div class="carouselBox"><a href="#" data-featherlight="#winterbros"><img src="assets/pix/wintersbros.png" /></a>
-            <div class="carouselDetails" id="winterbros"><img src="assets/pix/wintersbros.png" /><p>here's some stuff</p></div>
-            </div>
-          <div class="carouselBox"><img src="assets/pix/wintersbros.png" /><p>STUFF</p></div>
-        </div>
-<!-- end jquery carousel -->
+
+    <div id="portfolio">
+
+      <div class="imgThumb">
+        <a href="#" class="lightbox" data-featherlight="assets/pix/greenstream.png">
+          <img src="assets/pix/greenstream.png" />
+        </a>
+      </div>
+
+      <div class="imgThumb">
+        <a href="#" class="lightbox" data-featherlight="assets/pix/wintersbros.png">
+          <img src="assets/pix/wintersbros.png" />
+        </a>
+      </div>
+      
+      <div class="imgThumb">
+        <a href="#" class="lightbox" data-featherlight="assets/pix/wintersbros.png">
+          <img src="assets/pix/wintersbros.png" />
+        </a>
+      </div>
+
+      <div class="imgThumb">
+        <a href="#" class="lightbox" data-featherlight="assets/pix/wintersbros.png">
+          <img src="assets/pix/wintersbros.png" />
+        </a>
+      </div>
+
+      <div class="imgThumb">
+        <a href="#" class="lightbox" data-featherlight="assets/pix/wintersbros.png">
+          <img src="assets/pix/wintersbros.png" />
+        </a>
+      </div>
+
     </div>
   </div>
+</div>
 </div>
 
 <!-- J0b Hist0ry / origin story -->
@@ -189,35 +213,28 @@
 <!-- here go the javascripts -->
   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/owlcarousel/owl.carousel.init.js"></script>
+  <!--<script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/owlcarousel/owl.carousel.init.js"></script>-->
   <script type="text/javascript" src="js/featherlight/featherlight.min.js"  charset="utf-8"></script>
+  <!--<script type="text/javascript" src="js/jQuery.TosRUs-master/src/js/jquery.tosrus.min.all.js"></script>-->
   <script type="text/javascript" src="js/flip/flip.js"></script>
+  <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+
+
 
   <script type="text/javascript">
   $(document).ready(function () {
     console.log("ready!");
-     $("#bioCard").flip({
+     $("#bioCard, div.imgThumb").flip({
       axis: 'y',
       trigger: 'hover'
     });
-  });
 
-  $(".carouselBox").click(function () {
-    $(".carouselDetails").show();
+
 
   });
 
-   $(".featherlight").click(function () {
-    console.log("got it");
-    $(".carouselDetails").hide();
-
-  });
-
-    $(".featherlight-close-icon").click(function () {
-    $(".carouselDetails").hide();
-
-  });
+       $('a.lightbox').featherlight();
 
 
   </script>

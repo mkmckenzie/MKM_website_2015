@@ -14,7 +14,8 @@ $navbar-height: 50px;
 $white: #ffffff;
 $that-blue: #579fc6;
 $background-color: #ffffff;
-$navbar-color: #dadada;
+$black: #000000;
+$section-color: #dadada;
 
 /* Defines styles, top down */ 
 body {
@@ -61,7 +62,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $navbar-color;
+	background-color: $black;
 	z-index: 30;
 
 	ul#page {
@@ -107,9 +108,8 @@ nav {
 header {
 	text-align: center;
 	/*background-color: #d3d3d3;*/
-	padding: $navbar-height*4;
+	padding: $navbar-height*3;
 }
-
 div#videoOverlay {
 	position: absolute;
 	top: 0;
@@ -133,18 +133,22 @@ video {
 }
 
 div.section {
-	padding: $navbar-height*2;
+	padding: $navbar-height;
 	width: 100%;
 
 	div {
-    line-height: $body-line-height;
+    line-height: $body-line-height*1.5;
     text-align: left;
   }
 	
 }
 
-#bio, #projects, #skills, #history, #contact {
+#bio, #history, #contact {
 	background-color: #ffffff;
+}
+
+#projects, #skills {
+  background-color: $section-color;
 }
 
 div#techSkillsContainer, div#softSkillsContainer {
@@ -153,9 +157,32 @@ div#techSkillsContainer, div#softSkillsContainer {
 
 }
 
-div.carouselDetails {
-	display: none;
+div#portfolio {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+	div {
+	height: auto;
+	width: 350px;
+  height: 400px;
+  overflow: hidden;
+  padding: 30px;
+
+		img {
+    height: 100%;
+
+		}
+
+		.back {
+			background-color: $background-color;
+		}
+	}
 }
+
+
 
 
 /* Hexagons */

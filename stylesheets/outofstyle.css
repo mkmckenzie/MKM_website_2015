@@ -185,7 +185,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #dadada;
+  background-color: #000000;
   z-index: 30; }
   nav ul#page {
     float: left; }
@@ -217,7 +217,7 @@ nav {
 header {
   text-align: center;
   /*background-color: #d3d3d3;*/
-  padding: 200px; }
+  padding: 150px; }
 
 div#videoOverlay {
   position: absolute;
@@ -241,21 +241,38 @@ video {
   filter: alpha(opacity=35); }
 
 div.section {
-  padding: 100px;
+  padding: 50px;
   width: 100%; }
   div.section div {
-    line-height: 21px;
+    line-height: 31.5px;
     text-align: left; }
 
-#bio, #projects, #skills, #history, #contact {
+#bio, #history, #contact {
   background-color: #ffffff; }
+
+#projects, #skills {
+  background-color: #dadada; }
 
 div#techSkillsContainer, div#softSkillsContainer {
   float: left;
   width: 48%; }
 
-div.carouselDetails {
-  display: none; }
+div#portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; }
+  div#portfolio div {
+    height: auto;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    padding: 30px; }
+    div#portfolio div img {
+      height: 100%; }
+    div#portfolio div .back {
+      background-color: #ffffff; }
 
 /* Hexagons */
 .hexagon {
