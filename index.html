@@ -56,7 +56,7 @@
 <!-- Jus my name -->
   <header>
     <div class="outer-container">
-      <h1>MARY-KATHERINE MCKENZIE</h1>
+      <h1 id="name" style="display:none;">MARY-KATHERINE MCKENZIE</h1>
     </div>
   </header>
   
@@ -74,7 +74,7 @@
   <div class="section" id="bio">
     <div class="outer-container">
       <div class="col-8 shift-2">
-        <h2>A rehabbed perfectionist who now understands the benefit of iterating quickly. DNA composed of visual design. Enthusaistic coder + community member.</h2>
+        <h2>A rehabbed perfectionist who now understands the benefit of iterating quickly. DNA composed of visual design. Enthusaistic coder + active community member.</h2>
       </div>
     </div>
   </div>
@@ -147,6 +147,24 @@
         <p>Like any good North Carolinian, I attended the University of North Carolina at Chapel Hill and graduated in 2013 with a BS in Environmental Science, concentrating in Energy + Sustainability. My favorite classes included Intro to Scientific Programming (Matlab), Environmental Problem Solving, Life Cycle Analysis, German, and Genetics. While studying in Bangkok, I sharpened my design skills <a href="https://flic.kr/p/wA2Rub">creating t-shirts</a>.</p>
       </div>
     </div>
+    <div class="outer-container">
+      <div class="col-8 shift-2">
+        <h2>extracurriculars</h2>
+        <h3>CodeNewbie DC Organizer
+          <br >
+          <em>March 2016 - Present</em></h3>
+          <p>Organized the DC chapter of the CodeNewbie meetup group, selected locations for the meetup and cultivated a supportive community of code learners from all backgrounds and experience levels.</p>
+        <h3>Ruby on Rails Team Lead - Women Who Code DC
+          <br />
+          <em>November 2015 - Present</em></h3>
+          <p>First started attending Women Who Code meetups in May of 2015 and was immediately drawn to the community. After several months of attending Ruby on Rails meetups, I was brought on to be a volunteer team lead for the group. I organize and advertise meetups alongside 3 other amazing team leads, as well as give lightning talks on subjects such as Rails, Git, and design guidelines outlined in Sandi Metz's Principles of Object Oriented Design in Ruby. </p>
+        <h3>CodeNewbie Bookclub Organizer<br />
+          <em>August 2015 - November 2015</em></h3>
+          <p>Organized and hosted an online bookclub reviewing Practical Object Oriented Design in Ruby with several individuals from the online community CodeNewbies.  Created slides for each chapter and led a weekly discussion that wrapped up as a Birds of a Feather session at RubyConf 2015. The YouTube playlist is <a href="https://www.youtube.com/playlist?list=PLtNihcG6aHOzjk9SEW6s6oxpxFvgSUfGB">here</a>.</p>
+
+
+      </div>
+    </div>
 </div>
 
 <div class="section" id="skills">
@@ -190,8 +208,8 @@
           </li>
           <li>Community Management</li>
           <li>Face-to-Face Communication</li>
-          <li>Here's another one thats not dumb</li>
-          <li>~passionate~</li>
+          <li>Social Media Strategy</li>
+          <li>Passionate Learner</li>
           <li>generally a likeable person, does that count as skill</li>
         </ul>
       </div>
@@ -203,8 +221,12 @@
     <div class="outer-container">
       <div class="col-8 shift-2">
         <h2>contact</h2>
-        <p>To hell with the three day rule. Email me now.
-        </p>
+        <p>To hell with the three day rule. </p>
+        <a href="mailto:marykatherinemckenzie@gmail.com">
+          <div class="btn btn-primary">
+            <p>Email me now.</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -213,10 +235,7 @@
 <!-- here go the javascripts -->
   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <!--<script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/owlcarousel/owl.carousel.init.js"></script>-->
   <script type="text/javascript" src="js/featherlight/featherlight.min.js"  charset="utf-8"></script>
-  <!--<script type="text/javascript" src="js/jQuery.TosRUs-master/src/js/jquery.tosrus.min.all.js"></script>-->
   <script type="text/javascript" src="js/flip/flip.js"></script>
   <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
 
@@ -229,9 +248,7 @@
       axis: 'y',
       trigger: 'hover'
     });
-
-
-
+     $("h1#name").fadeIn("1000");
   });
 
        $('a.lightbox').featherlight();
