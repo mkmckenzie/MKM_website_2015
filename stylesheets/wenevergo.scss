@@ -17,6 +17,7 @@ $background-color: #ffffff;
 $black: #000000;
 $section-color: #dadada;
 
+
 /* Defines styles, top down */ 
 body {
 	position: relative;
@@ -31,7 +32,8 @@ h1 {
 	letter-spacing: 20px;
 	text-align: center;
 	//color: darken($navbar-color, 30%);
-	color: $that-blue;
+	color: $black;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -62,7 +64,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $black;
+	background-color: $that-blue;
 	z-index: 30;
 
 	ul#page {
@@ -76,28 +78,36 @@ nav {
 
 	ul {
 		height: $navbar-height;
-		margin: 0;
+		margin: -1px 0 0 0;
 		line-height: normal;
 
 		li { 
 			display: inline-block;
 			margin-top:($navbar-height - $body-line-height)/2;
-			/*margin-bottom: $body-line-height;
-			line-height: normal;*/
+			margin-bottom: $body-line-height;
+			line-height: normal;
+      height: 100%;
+
 
 			a {
-				height: $navbar-height;
-				padding: ($navbar-height - $body-line-height)/2;
+				height: ($navbar-height - $body-line-height);
+				padding: ($navbar-height - $body-line-height);
 				text-decoration: none;
 				color: #ffffff;
-				margin: 0;
+				//margin: 0;
 			}
 
 			a:hover {
 				background-color: #d3d3d3;
 				color: #000000;
-			}
-		}
+			} 
+    }
+
+    /*li:hover {
+        background-color: #d3d3d3;
+        color: #000000;
+      }*/
+		
 	}
 }
 
@@ -180,6 +190,23 @@ div#portfolio {
 			background-color: $background-color;
 		}
 	}
+}
+
+div.btn {
+  padding: 5px;
+  margin: 10px 0px;
+  max-width: 25%;
+  border-radius: 30px;
+  text-decoration: none;
+
+  p {
+    text-align: center;
+  }
+}
+
+div.btn-primary {
+    background-color: $that-blue;
+    color: $black;
 }
 
 

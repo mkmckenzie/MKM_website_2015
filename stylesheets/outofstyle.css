@@ -159,7 +159,8 @@ h1 {
   font-size: 80px;
   letter-spacing: 20px;
   text-align: center;
-  color: #579fc6; }
+  color: #000000;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -185,7 +186,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #579fc6;
   z-index: 30; }
   nav ul#page {
     float: left; }
@@ -194,19 +195,23 @@ nav {
     margin-right: 40px; }
   nav ul {
     height: 50px;
-    margin: 0;
-    line-height: normal; }
+    margin: -1px 0 0 0;
+    line-height: normal;
+    /*li:hover {
+        background-color: #d3d3d3;
+        color: #000000;
+      }*/ }
     nav ul li {
       display: inline-block;
       margin-top: 14.5px;
-      /*margin-bottom: $body-line-height;
-      line-height: normal;*/ }
+      margin-bottom: 21px;
+      line-height: normal;
+      height: 100%; }
       nav ul li a {
-        height: 50px;
-        padding: 14.5px;
+        height: 29px;
+        padding: 29px;
         text-decoration: none;
-        color: #ffffff;
-        margin: 0; }
+        color: #ffffff; }
       nav ul li a:hover {
         background-color: #d3d3d3;
         color: #000000; }
@@ -273,6 +278,19 @@ div#portfolio {
       height: 100%; }
     div#portfolio div .back {
       background-color: #ffffff; }
+
+div.btn {
+  padding: 5px;
+  margin: 10px 0px;
+  max-width: 25%;
+  border-radius: 30px;
+  text-decoration: none; }
+  div.btn p {
+    text-align: center; }
+
+div.btn-primary {
+  background-color: #579fc6;
+  color: #000000; }
 
 /* Hexagons */
 .hexagon {
