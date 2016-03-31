@@ -1,0 +1,34 @@
+/* Creates the navbar */
+
+nav {
+  font-family: $source-sans;
+  width: 100%;
+  height: $navbar-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $that-blue;
+  z-index: 30;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  /*div {
+    flex-grow: 1;
+  }
+
+  div.flex-grow {
+    flex-grow: 2;
+  }*/
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: $black;
+  }
+}

@@ -33,19 +33,20 @@
 
   <!-- navigation station -->
   <nav>
-    <ul id="page">
-      <li><a href="#bio">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#history">work + education</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-    <ul id="social">
-      <li><a href="http://www.twitter.com/marykmckenzie">twitter</a></li>
-      <li><a href="http://www.github.com/mkmckenzie">github</a></li>
-      <li><a href="http://www.linkedin.com/">linkedin</a></li>
-    </ul>
+      <div><a href="#bio">about</a></div>
+      <div><a href="#projects">projects</a></div>
+      <div><a href="#history">work + education</a></div>
+      <div><a href="#skills">skills</a></div>
+      <div><a href="#contact">contact</a></div>
+      <div class="flex-grow"></div>
+      <div class="flex-grow"></div>
+      <div class="flex-grow"></div>
+      <div><a href="http://www.twitter.com/marykmckenzie">twitter</a></div>
+      <div><a href="http://www.github.com/mkmckenzie">github</a></div>
+      <div><a href="http://www.linkedin.com/">linkedin</a></div>
   </nav>
+
+<!-- that video tho -->
 
   <video autoplay>
       <source src="assets/video/doodle_timelapse.ogv" type="video/ogv" />
@@ -144,7 +145,7 @@
         <p>As the design and education intern, I learned Adobe Illustrator and InDesign on the fly, creating graphics to advertise for events both online and in print. My main project was building my first JavaScript app.  Be warned - it's not pretty, but <a href="http://www.sustainability.unc.edu/Resources/GreenResidenceHallRoom">it is still live</a>.</p>
         <h3>University of North Carolina at Chapel Hill - Class of 2013<br />
           <em>B.S. Environmental Science - Energy + Sustainability, Biology Minor</em></h3>
-        <p>Like any good North Carolinian, I attended the University of North Carolina at Chapel Hill and graduated in 2013 with a BS in Environmental Science, concentrating in Energy + Sustainability. My favorite classes included Intro to Scientific Programming (Matlab), Environmental Problem Solving, Life Cycle Analysis, German, and Genetics. While studying in Bangkok, I sharpened my design skills <a href="https://flic.kr/p/wA2Rub">creating t-shirts</a>.</p>
+        <p>Like any good North Carolinian, I attended the University of North Carolina at Chapel Hill and graduated in 2013 with a BS in Environmental Science, concentrating in Energy + Sustainability. My favorite classes included Intro to Scientific Programming (Matlab), Environmental Problem Solving, Life Cycle Analysis, German, and Genetics. While studying in Bangkok, I sharpened my design skills <a href="https://flic.kr/p/wA2Rub">creating t-shirts</a>.  My capstone project can be found in the <a href="http://www.jseejournal.com/JSEE%202014/JSEE%205(2)/9.%20Transportation%20Fuels%20from%20Algae%20pp.53-60.pdf">Journal for Sustainable Energy and Environment</a>.</p>
       </div>
     </div>
     <div class="outer-container">
@@ -221,12 +222,28 @@
     <div class="outer-container">
       <div class="col-8 shift-2">
         <h2>contact</h2>
-        <p>To hell with the three day rule. </p>
-        <a href="mailto:marykatherinemckenzie@gmail.com">
-          <div class="btn btn-primary">
-            <p>Email me now.</p>
-          </div>
-        </a>
+        <form role="form" id="contact-form"  method="POST" action="//formspree.io/marykatherinemckenzie@gmail.com">
+                    
+        <div class="form-group">
+          <label>Name:</label>
+           <input type="text" class="form-control" id="name"  name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control" id="email"   name="_replyto" placeholder="Enter your email" required>
+        </div>
+​
+        <div class="form-group">
+          <label>Message:</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+​
+        <input type="hidden" name="_next" value="//marykatherinemckenzie.com/thanks.html" />
+​
+        <button type="submit" class="btn btn-default" value="Send">SEND<i class="icon-after fa fa-chevron-right"></i></button>
+​
+      </form>
       </div>
     </div>
   </div>

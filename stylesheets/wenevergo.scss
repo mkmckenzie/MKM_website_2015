@@ -1,21 +1,10 @@
 /*importing stylesheets */
+@import "variables";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "normalize.css";
 @import "columns";
-
-
-
-/* variables */
-$body-line-height: 21px;
-$source-sans: 'Source Sans Pro', sans-serif;
-$raleway: 'Raleway', sans-serif;
-$navbar-height: 50px;
-$white: #ffffff;
-$that-blue: #579fc6;
-$background-color: #ffffff;
-$black: #000000;
-$section-color: #dadada;
+@import "navbar";
 
 
 /* Defines styles, top down */ 
@@ -57,59 +46,7 @@ body p, li {
 	font-size: 14px;
 }
 
-nav {
-	font-family: $source-sans;
-	width: 100%;
-	height: $navbar-height;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: $that-blue;
-	z-index: 30;
 
-	ul#page {
-		float: left;
-	}
-
-	ul#social {
-		float: right;
-		margin-right: 40px;
-	}
-
-	ul {
-		height: $navbar-height;
-		margin: -1px 0 0 0;
-		line-height: normal;
-
-		li { 
-			display: inline-block;
-			margin-top:($navbar-height - $body-line-height)/2;
-			margin-bottom: $body-line-height;
-			line-height: normal;
-      height: 100%;
-
-
-			a {
-				height: ($navbar-height - $body-line-height);
-				padding: ($navbar-height - $body-line-height);
-				text-decoration: none;
-				color: #ffffff;
-				//margin: 0;
-			}
-
-			a:hover {
-				background-color: #d3d3d3;
-				color: #000000;
-			} 
-    }
-
-    /*li:hover {
-        background-color: #d3d3d3;
-        color: #000000;
-      }*/
-		
-	}
-}
 
 .spacer {
 	height: $body-line-height*2;
