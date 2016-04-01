@@ -1,0 +1,50 @@
+form {
+
+}
+
+label {
+  /*styled along with body p, li...*/
+
+}
+
+input, textarea {
+ /*text styled along with body p, li...*/
+
+  border: 2px solid $black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+
+}
+
+
+.form-group {
+
+  label {
+
+  }
+
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 150px;
+  border-radius: 15px;
+  text-decoration: none;
+  border: none;
+
+  p {
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+.btn-default {
+    background-color: $that-blue;
+    color: white;
+}
+
+.btn-default:hover {
+  color: $black;
+}

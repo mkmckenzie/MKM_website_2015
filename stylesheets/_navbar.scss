@@ -9,19 +9,22 @@ nav {
   left: 0;
   background-color: $that-blue;
   z-index: 30;
+  padding-left: 40px;
+  padding-right: 40px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
 
-  /*div {
+  div {
     flex-grow: 1;
   }
 
   div.flex-grow {
-    flex-grow: 2;
-  }*/
+    flex-grow: 4;
+  }
 
   a {
     text-decoration: none;

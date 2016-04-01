@@ -157,23 +157,50 @@ nav {
   left: 0;
   background-color: #579fc6;
   z-index: 30;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
-  /*div {
-    flex-grow: 1;
-  }
-
-  div.flex-grow {
-    flex-grow: 2;
-  }*/ }
+  align-items: center; }
+  nav div {
+    flex-grow: 1; }
+  nav div.flex-grow {
+    flex-grow: 4; }
   nav a {
     text-decoration: none;
     color: #ffffff; }
   nav a:hover {
     color: #000000; }
+
+label {
+  /*styled along with body p, li...*/ }
+
+input, textarea {
+  /*text styled along with body p, li...*/
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%; }
+
+.btn {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 150px;
+  border-radius: 15px;
+  text-decoration: none;
+  border: none; }
+  .btn p {
+    text-align: center;
+    margin: 0px; }
+
+.btn-default {
+  background-color: #579fc6;
+  color: white; }
+
+.btn-default:hover {
+  color: #000000; }
 
 /* Defines styles, top down */
 body {
@@ -202,7 +229,7 @@ h3 {
   font-size: 18px;
   line-height: 31.5px; }
 
-body p, li {
+body p, li, label, input, textarea {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 21px;
   font-size: 14px; }
@@ -269,19 +296,6 @@ div#portfolio {
       height: 100%; }
     div#portfolio div .back {
       background-color: #ffffff; }
-
-div.btn {
-  padding: 5px;
-  margin: 10px 0px;
-  max-width: 25%;
-  border-radius: 30px;
-  text-decoration: none; }
-  div.btn p {
-    text-align: center; }
-
-div.btn-primary {
-  background-color: #579fc6;
-  color: #000000; }
 
 /* Hexagons */
 .hexagon {

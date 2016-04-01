@@ -5,6 +5,7 @@
 @import "normalize.css";
 @import "columns";
 @import "navbar";
+@import "form";
 
 
 /* Defines styles, top down */ 
@@ -40,7 +41,7 @@ h3 {
 
 }
 
-body p, li {
+body p, li, label, input, textarea {
 	font-family: $source-sans;
 	line-height: $body-line-height;
 	font-size: 14px;
@@ -129,22 +130,7 @@ div#portfolio {
 	}
 }
 
-div.btn {
-  padding: 5px;
-  margin: 10px 0px;
-  max-width: 25%;
-  border-radius: 30px;
-  text-decoration: none;
 
-  p {
-    text-align: center;
-  }
-}
-
-div.btn-primary {
-    background-color: $that-blue;
-    color: $black;
-}
 
 
 
