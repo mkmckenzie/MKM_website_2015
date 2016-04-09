@@ -13,17 +13,18 @@ nav {
   padding-right: 40px;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
 
+
   div {
-    flex-grow: 1;
+    text-align: center;
+    flex: 1 0 auto;
   }
 
   div.flex-grow {
-    flex-grow: 4;
+    flex: 4 2 auto;
   }
 
   a {
