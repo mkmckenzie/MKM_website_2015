@@ -27,7 +27,7 @@
   border-radius: $base-border-radius;
   border: $card-border;
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
-  cursor: pointer;
+  /*cursor: pointer;*/
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
 
@@ -52,18 +52,31 @@
     background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    line-height: 1.5em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
+
+    h3 {
+      margin: 0;
+    }
   }
 
   .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
 
     p {
       margin: 0 0 ($base-spacing / 2);
+    }
+
+    .tag {
+      position: relative;
+      bottom: 5px;
+
+      span {
+        background-color: $section-color;
+        color: darken($section-color, 30%);
+        padding: 5px 8px;
+        border-radius: 10px;
+        font-size: $body-font-size * 0.9;
+      }
     }
   }
 

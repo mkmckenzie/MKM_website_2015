@@ -16,42 +16,42 @@ body {
 	background-color: $background-color;
 }
 
+h1, h2, h3 {
+  font-family: $raleway;
+  font-weight: 800;
+}
+
 h1 {
-	font-family: $raleway;
-	font-weight: 800;
 	font-size: 80px;
 	letter-spacing: 20px; 
 	text-align: center;
 	//color: darken($navbar-color, 30%);
 	color: $black;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+  sup {
+    top: -0.2em;
+  }
 }
 
 h2 {
-	font-family: $raleway;
-	font-weight: 800;
 	font-size: 30px;
 	line-height: $body-line-height*2;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-	font-family: $raleway;
-	font-weight: 800;
 	font-size: 18px;
 	line-height: $body-line-height*1.5;
 
 }
 
-body p, li, label, input, textarea {
+p, li, label, input, textarea {
 	font-family: $source-sans;
 	line-height: $body-line-height;
-	font-size: 14px;
+	font-size: $body-font-size;
 }
 
-h1 sup {
-  top: -0.2em;
-}
 
 
 
@@ -110,32 +110,6 @@ div#techSkillsContainer, div#softSkillsContainer {
 	width: 48%;
 
 }
-
-div#portfolio {
-  display: flex;
-  flex-direction: row;  
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-
-	div {
-	height: auto;
-	width: 350px;
-  height: 400px;
-  overflow: hidden;
-  padding: 30px;
-
-		img {
-    height: 100%;
-
-		}
-
-		.back {
-			background-color: $background-color;
-		}
-	}
-}
-
 
 
 
