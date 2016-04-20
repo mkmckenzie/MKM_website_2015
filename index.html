@@ -7,7 +7,7 @@
   <title>Mary Katherine McKenzie</title>
 
   <!-- Meta Stuff -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Mary Katherine McKenzie's resume">
   <meta name="author" content="Mary Katherine McKenzie">
 
@@ -88,8 +88,8 @@
 
      </div>
    </div>
-   <div class="outer-container">
-     <div class="col-12">
+ </div>
+
       <div id="portfolio">
         <div class="cards">
           <div class="card">
@@ -181,16 +181,11 @@
               <p>Tradtionally left to an outside vendor, I decided to take a stab at designing the branding for SWANA's biggest annual event: WASTECON. The Indy 500 theme was the winner as we raced towards Indianapolis in the fall.</p>
               <p class="tag"> <span>swana</span> <span>illustrator</span> <span>graphic design</span> </p>
             </div>
-          </div>
-
-
-
-
-        </div>
+          
       </div>
     </div>
   </div>
-</div>
+
 
 <!-- J0b Hist0ry / origin story -->
 <div class="section" id="history">
@@ -325,11 +320,14 @@
   <script type="text/javascript">
   $(document).ready(function () {
     console.log("ready!");
+
+     $("h1#name").fadeIn("1000", function() {
+      $("#bioCard, div.imgThumb").fadeIn("1000");
+     });
      $("#bioCard, div.imgThumb").flip({
       axis: 'y',
       trigger: 'hover'
     });
-     $("h1#name").fadeIn("1000");
   });
 
        $('a.lightbox').featherlight();

@@ -150,6 +150,7 @@ html {
 /* Creates the navbar */
 nav {
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
   width: 100%;
   height: 50px;
   position: fixed;
@@ -210,13 +211,13 @@ input, textarea {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   box-pack: justify;
@@ -225,17 +226,12 @@ input, textarea {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify; }
+  -ms-flex-pack: justify;
+  width: 2500px; }
 
 .card {
-  -webkit-flex-basis: 15em;
-  -moz-flex-basis: 15em;
-  flex-basis: 15em;
-  -ms-flex-preferred-size: 15em;
-  -webkit-flex-grow: 1;
-  -moz-flex-grow: 1;
-  flex-grow: 1;
-  -ms-flex-positive: 1;
+  /*@include flex-basis(15em);
+  @include flex-grow(1);*/
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -245,7 +241,8 @@ input, textarea {
   box-shadow: 0 2px 4px #e6e6e6;
   /*cursor: pointer;*/
   margin: 0 1em 1.5em 1em;
-  position: relative; }
+  position: relative;
+  width: 300px; }
   .card .card-image {
     overflow: hidden;
     height: 150px;
@@ -281,7 +278,7 @@ input, textarea {
         color: #8e8e8e;
         padding: 5px 8px;
         border-radius: 10px;
-        font-size: 12.6px; }
+        font-size: 14.4px; }
   .card:focus, .card:hover {
     cursor: pointer; }
     .card:focus img, .card:hover img {
@@ -295,7 +292,10 @@ input, textarea {
 body {
   position: relative;
   top: 50px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 25px;
+  font-size: 16px; }
 
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
@@ -306,26 +306,25 @@ h1 {
   letter-spacing: 20px;
   text-align: center;
   color: #000000;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  line-height: normal; }
   h1 sup {
     top: -0.2em; }
 
 h2 {
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 40.625px;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
 
 h3 {
-  font-size: 18px;
-  line-height: 31.5px; }
+  font-size: 20px;
+  line-height: 31.25px; }
 
 p, li, label, input, textarea {
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 21px;
-  font-size: 14px; }
+  line-height: 25px; }
 
 .spacer {
-  height: 42px; }
+  height: 50px; }
 
 header {
   text-align: center;
@@ -357,18 +356,22 @@ div.section {
   padding: 50px;
   width: 100%; }
   div.section div {
-    line-height: 31.5px;
+    line-height: 37.5px;
     text-align: left; }
 
 #bio, #history, #contact {
   background-color: #ffffff; }
 
-#projects, #skills {
+#projects, #skills, #portfolio {
   background-color: #dadada; }
 
 div#techSkillsContainer, div#softSkillsContainer {
   float: left;
   width: 48%; }
+
+div#portfolio {
+  overflow-x: scroll;
+  width: 100%; }
 
 /* Hexagons */
 .hexagon {
@@ -389,8 +392,8 @@ div#techSkillsContainer, div#softSkillsContainer {
     text-align: center;
     color: #ffffff;
     margin: 20px;
-    font-size: 21px;
-    line-height: 21px; }
+    font-size: 25px;
+    line-height: 25px; }
 
 .hexagon:before,
 .hexagon:after {

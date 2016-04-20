@@ -1,7 +1,8 @@
 .cards {
   @include display(flex);
-  @include flex-wrap(wrap);
+  @include flex-wrap(nowrap);
   @include justify-content(space-between);
+  width: 2500px;
 }
 
 .card {
@@ -20,8 +21,8 @@
   $card-image-hover-opacity: 0.7;
   $card-image-hover-color: #F8F2B4;
 
-  @include flex-basis(15em);
-  @include flex-grow(1);
+  /*@include flex-basis(15em);
+  @include flex-grow(1);*/
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
   border-radius: $base-border-radius;
@@ -30,6 +31,7 @@
   /*cursor: pointer;*/
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
+  width: 300px;
 
 
   .card-image {
